@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -275,7 +279,7 @@ header {
 
 .about {
   background: rgb(231, 131, 64);
-  padding-top: 7rem;
+  padding-top: 7rem 0;
 }
 
 .about-content {
@@ -316,4 +320,117 @@ header {
 .my-bio .tag + div span:hover {
   cursor: pointer;
   background: grey;
+}
+
+/*----- contact me section-----*/
+
+.Contact {
+  padding-top: 7rem;
+  /* margin-top: 3rem; */
+
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.contact .section {
+  justify-content: space space-around;
+  margin: 5rem;
+}
+
+.contact .section i {
+  font-size: 5rem;
+}
+
+.email-section {
+  justify-content: center;
+}
+
+.email {
+  background-color: var(--border-color);
+  color: var(--body-bg);
+  padding: 1rem 2rem;
+  width: 400px;
+  border-radius: 100px;
+  border-color: var(--body-bg);
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+}
+
+.email .send {
+  background: orangered;
+  color: white;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+/*----- footer section -----*/
+.footer {
+  background: black;
+  color: white;
+  padding: 3rem;
+}
+
+.footer .top {
+  justify-content: center;
+  gap: 6rem;
+}
+
+.footer .top ul {
+  list-style: none;
+  padding-left: 0;
+  line-height: 2.5rem;
+}
+
+.footer .bottom {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 2rem;
+  background: black;
+}
+/* goup button */
+.go-up {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: var(--color-orange);
+
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  font-size: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    text-align: center;
+    display: grid;
+    gap: 3rem;
+    padding-bottom: 2rem;
+    grid-template-areas:
+      "right"
+      "left";
+  }
+
+  .right img {
+    width: 100%;
+  }
+
+  .banner {
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
 }
